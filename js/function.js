@@ -5,5 +5,5 @@ function costo(){
 
     minutosTotales = parseInt(minutos) * (1/60);
     resultado = parseInt(costoHora) * (parseInt(horas) + minutosTotales);
-    alert('Usted debe pagar ' + Math.round(resultado) + ' pesos' )
+    document.getElementById('precio').innerText = 'Usted debe pagar ' + Math.round(resultado) + ' pesos'
 }
